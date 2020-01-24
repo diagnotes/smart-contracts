@@ -1,4 +1,4 @@
-contract SaveEncounterEventHash {
+contract EncounterEvents {
     string eventHash;
 
     function setEventHash(string hash)
