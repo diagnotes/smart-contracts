@@ -4,7 +4,6 @@ contract EncounterEvents {
     string eventHash;
 
     function setEventHash(string hash)
-        onlyOwner
     {
         eventHash = hash;
     }
