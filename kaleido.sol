@@ -1,14 +1,14 @@
-pragma solidity ^0.4.17;
+pragma solidity ^0.6.1;
 
 contract EncounterEvents {
     string eventHash;
 
-    function setEventHash(string hash)
+    function setEventHash(string memory hash) public
     {
         eventHash = hash;
     }
 
-    function getEventHash() returns (string hash) {
+    function getEventHash() public view returns (string memory retVal) {
         return eventHash;
     }
 }
