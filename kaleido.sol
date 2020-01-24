@@ -1,14 +1,10 @@
 pragma solidity ^0.6.1;
 
 contract EncounterEvents {
-    string eventHash;
+    event EventPublished(uint encounterEventId, bytes32 eventHash);
 
-    function setEventHash(string memory hash) public
+    function publish(uint encounterEventId, bytes32 eventHash) public
     {
-        eventHash = hash;
-    }
-
-    function getEventHash() public view returns (string memory retVal) {
-        return eventHash;
+        emit EventPublished(encounterEventId, eventHash);
     }
 }
