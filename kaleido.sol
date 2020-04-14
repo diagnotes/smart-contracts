@@ -1,4 +1,4 @@
-pragma solidity ^0.6.1;
+pragma solidity >=0.4.24 <0.6.0;
 
 contract EncounterEvents {
     event EventPublished(uint encounterEventId, bytes32 eventHash);
